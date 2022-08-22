@@ -9,7 +9,6 @@ import requests
 import json
 from bs4 import BeautifulSoup
 
-// Estabelece a conexão do código com o TOKEN do bot
 def connectTelegram(API_TOKEN):
   API_TOKEN = API_TOKEN
   bot = telebot.TeleBot(API_TOKEN)
@@ -88,13 +87,13 @@ def sendTelegram(bot, noticias_telegram, chatId):
       # Foto de cada notícia
       photo = noticias_telegram['noticia' + str(i+1)][3],
       # Texto de cada notícia
-      caption = "<b>" + noticias_telegram['noticia' + str(i+1)][0] + "</b>\n\n" + noticias_telegram['noticia1'][1] + "\n\n" + noticias_telegram['noticia1'][2],
+      caption = "<b>" + noticias_telegram['noticia' + str(i+1)][0] + "</b>\n\n" + noticias_telegram['noticia' + str(i+1)][1] + "\n\n" + noticias_telegram['noticia' + str(i+1)][2],
       # Permite "Adicionar" Tags HTML no texto.
       parse_mode = "HTML"
     )
 
 # Finaliza a conexão com o Telegram.
-bot = connectTelegram('5650155995:AAG9HM64roEuzdKNTNuK9GV4All_d1OV5JQ')
+bot = connectTelegram('INSIRA AQUI O TOKEN')
 
 # Envia as noticias para o Telegram.
-sendTelegram(bot, verificNoticias(noticiasDicionario()), -655568266)
+sendTelegram(bot, verificNoticias(noticiasDicionario()), INSIRA AQUI O CHATID)
