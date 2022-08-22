@@ -8,7 +8,7 @@ Imagens abaixo comparando as últimas noticias do site G1 com o canal do telegra
 
 ## Canal Telegram
 
-![Noticias G1](./telegram.png)
+![Telegram Chat](./telegram.png)
 
 ## Tecnologias Utilizadas
 
@@ -28,6 +28,8 @@ Para quem está interessado vou demonstrar um tutorial mostrando como se deve fa
 ### Primeiro passo - Iniciar conversa com BotFather
 No Telegram é necessário pesquisar pelo usuário BotFather e iniciar uma conversa.
 
+![botfather](./botfather.png)
+
 ### Segundo passo - Criação do bot no BotFather
 Agora é importante passar alguns comandos para a criação do bot.
 
@@ -38,6 +40,8 @@ Após o comando /newbot você irá definir o nome do seu bot, e depois o Usernam
 
 Se tudo ocorreu corretamente, agora você ira receber o TOKEN do seu bot! Guarde esse TOKEN pois será importante.
 
+![token](./token.png)
+
 Pronto! Seu bot agora está criado, entretanto ainda precisamos adicionar o bot em um grupo e definir o que o bot irá fazer, essas modificações serão feitas no código.
 
 ### Terceiro passo - Adicionando o bot em grupo
@@ -46,6 +50,9 @@ Crie um grupo no Telegram e adicione o seu bot! Será necessário o Username do 
 Agora precisamos do ChatId, que será responsável por definir onde nosso bot irá enviar as mensagens.
 
 No Telegram Web entre no grupo onde deseja que o bot envie as notícias (lembrando que o bot já deve estar adicionado no grupo) e na URL copie todos os caracteres após o caracter '#'.
+
+![chatid](./url.png)
+
 ### Último passo - Modificações no código
 Agora baixe o código noticias_df_g1.py e use a IDE da sua preferência.
 Precisamos fazer apenas duas alterações no código.
